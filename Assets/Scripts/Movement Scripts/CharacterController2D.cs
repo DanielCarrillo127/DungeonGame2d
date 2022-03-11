@@ -126,9 +126,20 @@ public class CharacterController2D : MonoBehaviour
 		// If the player should jump...
 		if (m_Grounded && jump)
 		{
+        	Debug.Log("_Velocidad en Y: "+ m_JumpForce );
+
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+		}
+		float jump2 = m_JumpForce;
+		if (m_Grounded && jump && jump2 > 0)
+		{
+        	Debug.Log("_Velocidad en Y: "+ m_JumpForce );
+
+			// Add a vertical force to the player.
+			m_Grounded = false;
+			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * 0.5f));
 		}
 	}
 
@@ -143,4 +154,5 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+	
 }
