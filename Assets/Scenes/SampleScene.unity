@@ -7306,6 +7306,22 @@ MonoBehaviour:
   heart2: {fileID: 145093504}
   heart3: {fileID: 1235775530}
   gameOver: {fileID: 2122324046}
+--- !u!70 &955450483
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955450481}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 21be2bccf48d3fb40b770c9028ef86df, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.21, y: 0.37999997}
+  m_Direction: 0
 --- !u!1 &961446727
 GameObject:
   m_ObjectHideFlags: 0
@@ -12117,6 +12133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4936669546838346602, guid: 97c5589404915744996dfee98e23d72c, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 21be2bccf48d3fb40b770c9028ef86df, type: 2}
     - target: {fileID: 4936669546838346612, guid: 97c5589404915744996dfee98e23d72c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -12131,11 +12151,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4936669546838346612, guid: 97c5589404915744996dfee98e23d72c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.12
+      value: -11.94
       objectReference: {fileID: 0}
     - target: {fileID: 4936669546838346612, guid: 97c5589404915744996dfee98e23d72c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 4936669546838346612, guid: 97c5589404915744996dfee98e23d72c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12181,6 +12201,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1522998347
       objectReference: {fileID: 0}
+    - target: {fileID: 4936669546838346613, guid: 97c5589404915744996dfee98e23d72c, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4936669546838346615, guid: 97c5589404915744996dfee98e23d72c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -12189,7 +12213,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4936669546838346602, guid: 97c5589404915744996dfee98e23d72c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 97c5589404915744996dfee98e23d72c, type: 3}
 --- !u!1 &1632313596
 GameObject:
