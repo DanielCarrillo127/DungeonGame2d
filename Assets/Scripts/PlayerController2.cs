@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class PlayerController2 : MonoBehaviour
 {
+    [SerializeField]Transform SpawnPlayer;
     public CharacterController2D controller;
     public Animator animator;
     public float runSpeed = 40f;
@@ -12,10 +13,10 @@ public class PlayerController2 : MonoBehaviour
     bool crouch = false;
 
     // Start is called before the first frame update
-    // void Start()
-    // {
-        
-    // }
+     void Start()
+     {
+        transform.position = SpawnPlayer.position;
+     }
 
     // Update is called once per frame
     void Update()

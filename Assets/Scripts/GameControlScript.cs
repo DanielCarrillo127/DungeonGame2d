@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControlScript : MonoBehaviour
 {
 
     public GameObject heart1, heart2, heart3, gameOver;
-    public  static int health;
+    public static int health;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class GameControlScript : MonoBehaviour
     {
         if (health > 3)
             health = 3;
-        
+
         switch (health)
         {
             case 3:
@@ -45,9 +46,13 @@ public class GameControlScript : MonoBehaviour
                 heart2.gameObject.SetActive(false);
                 heart3.gameObject.SetActive(false);
                 gameOver.gameObject.SetActive(true);
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
+                Destroy(gameObject);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+                
+                //SceneManager.LoadScene(sceneName: "lose");
                 break;
         }
-        
+
     }
 }
