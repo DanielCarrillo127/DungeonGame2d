@@ -6,11 +6,12 @@ TagManager:
   tags:
   - TrapNotRemove
   - TrapRemove
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - platform
   - Water
   - UI
   - 
