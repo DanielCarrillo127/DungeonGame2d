@@ -6,11 +6,12 @@ TagManager:
   tags:
   - TrapNotRemove
   - TrapRemove
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - platform
   - Water
   - UI
   - 
@@ -45,4 +46,7 @@ TagManager:
     locked: 0
   - name: Enviroment
     uniqueID: 2771968949
+    locked: 0
+  - name: HUD
+    uniqueID: 3913167405
     locked: 0
