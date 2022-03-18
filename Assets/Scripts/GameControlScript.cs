@@ -48,7 +48,7 @@ public class GameControlScript : MonoBehaviour
                 gameOver.gameObject.SetActive(true);
                 //Time.timeScale = 0;
                 Destroy(gameObject);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 
                 //SceneManager.LoadScene(sceneName: "lose");
                 break;

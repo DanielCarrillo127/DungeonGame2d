@@ -37,14 +37,14 @@ public class SpikeMovement : MonoBehaviour
         InstantiationTimer -= Time.deltaTime;
         if (InstantiationTimer <= 0 && posit == true)
         {
-            v3.y += 0.9f;
+            v3.x += 0.9f;
             transform.position = v3;
             InstantiationTimer = 3;
             posit = false;
         }
         if (InstantiationTimer <= 0 && posit == false)
         {
-            v3.y -= 0.9f;
+            v3.x -= 0.9f;
             transform.position = v3;
             InstantiationTimer = 3;
             posit = true;

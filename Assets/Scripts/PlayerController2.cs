@@ -79,6 +79,15 @@ public class PlayerController2 : MonoBehaviour
             currentOneWayPlatform = null;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("diamondScore"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
     private IEnumerator DisableCollision(){
     BoxCollider2D platformCollider = currentOneWayPlatform.GetComponent<BoxCollider2D>();
     Physics2D.IgnoreCollision(playerCollider,platformCollider);

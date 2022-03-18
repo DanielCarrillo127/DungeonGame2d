@@ -7,6 +7,8 @@ TagManager:
   - TrapNotRemove
   - TrapRemove
   - OneWayPlatform
+  - Grass
+  - diamondScore
   layers:
   - Default
   - TransparentFX
