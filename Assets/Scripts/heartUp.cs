@@ -8,7 +8,13 @@ public class heartUp : MonoBehaviour
      void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player")
         {
-            GameControlScript.health += 1;
+            
+            if(GameControlScript.health < 3){
+                GameControlScript.health += 1;
+                Destroy(gameObject);
+            }
+            
+
         }
     }
    

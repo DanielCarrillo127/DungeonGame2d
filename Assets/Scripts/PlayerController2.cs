@@ -73,7 +73,9 @@ public class PlayerController2 : MonoBehaviour
             currentOneWayPlatform = collision.gameObject;
             
         }
+         
     }
+    
     private void OnCollisionExit2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("OneWayPlatform")){
             currentOneWayPlatform = null;
@@ -86,6 +88,7 @@ public class PlayerController2 : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+         
     }
 
     private IEnumerator DisableCollision(){

@@ -10,6 +10,8 @@ public class TrapHealthScript : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             GameControlScript.health -= 1;
+            
+
             if (gameObject.tag == "TrapRemove")
             {
                 Destroy(gameObject);

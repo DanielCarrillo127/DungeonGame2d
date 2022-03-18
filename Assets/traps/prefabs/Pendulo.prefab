@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1186533444437339768}
   m_Layer: 0
   m_Name: Pendulo
-  m_TagString: Untagged
+  m_TagString: TrapNotRemove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
